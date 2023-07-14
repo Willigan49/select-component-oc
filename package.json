@@ -1,6 +1,6 @@
 {
   "name": "select-component-oc",
-  "version": "0.12.0",
+  "version": "1.0.0",
   "author": "Guillaume GERNIGON",
   "description": "React componant for select options easiest",
   "type": "module",
