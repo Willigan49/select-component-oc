@@ -25,17 +25,15 @@
     "build:cjs": "tsc --module commonjs --outDir dist/cjs",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "publish:npm": "rm -rf dist && npm run build && npm publish"
+    "publish:patch": "rm -rf dist && npm version patch && npm run build && npm publish",
+    "publish:minor": "rm -rf dist && npm version minor && npm run build && npm publish",
+    "publish:major": "rm -rf dist && npm version major && npm run build && npm publish"
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.5",
-    "@babel/core": "^7.22.5",
-    "@babel/preset-react": "^7.22.5",
-    "@babel/preset-typescript": "^7.22.5",
     "@types/react": "^18.0.37",
     "@types/react-dom": "^18.0.11",
     "@typescript-eslint/eslint-plugin": "^5.59.0",
